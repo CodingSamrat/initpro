@@ -1,0 +1,19 @@
+{
+  "name": "initpro",
+  "version": "1.0.0",
+  "description": "Express Starter Project",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon .",
+    "start": "node .",
+    "build": "node build"
+  },
+  "keywords": [
+    "initpro",
+    "express-starter-project"
+  ],
+  "author": "Sam <sam@codingsamrat.com>",
+  "license": "MIT"
+}
