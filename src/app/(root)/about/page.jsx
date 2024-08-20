@@ -5,8 +5,8 @@ const page = () => {
     return (
         <div>
             <LandingPage
-                title={'Admin Dashboard'}
-                message={'Use this page to create admin panel or you can remove as well if it is not necessary.'}
+                title={'About'}
+                message={'Write about the website...'}
             />
         </div>
     )

@@ -66,5 +66,5 @@ export const CounterSlice = createSlice({
 })
 
 
-export const { clearCounterMessage } = CounterSlice.actions;
+export const { clearCounterMessage, setCounter } = CounterSlice.actions;
 export default CounterSlice.reducer
