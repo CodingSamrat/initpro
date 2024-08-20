@@ -68,7 +68,7 @@ Options:
 
             execSync(`git clone --branch ${frameworkName} ${REPO_URL} ${projectName}`, { stdio: 'inherit' });
 
-            execSync(`sudo rm -rf ${projectName}/.git`, { stdio: 'inherit' });
+            execSync(`rm -rf ${projectName}/.git`, { stdio: 'inherit' });
             execSync(`git init ${projectName}`, { stdio: 'inherit' });
 
             packageJson['name'] = projectName
