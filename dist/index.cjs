@@ -63,9 +63,7 @@ Options:
       (0, import_child_process.execSync)(`git clone --branch ${frameworkName} ${REPO_URL} ${projectName}`, { stdio: "inherit" });
       (0, import_child_process.execSync)(`sudo rm -rf ${projectName}/.git`, { stdio: "inherit" });
       (0, import_child_process.execSync)(`git init ${projectName}`, { stdio: "inherit" });
-      console.log(packageJson);
       packageJson["name"] = projectName;
-      console.log(packageJson);
       await import_fs.default.writeFileSync(import_path.default.join(projectName, packageJsonPath), JSON.stringify(packageJson, null, 2));
     } catch (error) {
       console.log(error.message);

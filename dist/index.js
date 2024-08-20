@@ -40,9 +40,7 @@ Options:
       execSync(`git clone --branch ${frameworkName} ${REPO_URL} ${projectName}`, { stdio: "inherit" });
       execSync(`sudo rm -rf ${projectName}/.git`, { stdio: "inherit" });
       execSync(`git init ${projectName}`, { stdio: "inherit" });
-      console.log(packageJson);
       packageJson["name"] = projectName;
-      console.log(packageJson);
       await fs.writeFileSync(path.join(projectName, packageJsonPath), JSON.stringify(packageJson, null, 2));
     } catch (error) {
       console.log(error.message);
